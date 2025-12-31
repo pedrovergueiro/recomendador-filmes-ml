@@ -1,0 +1,65 @@
+# Dados e modelos
+data/raw/
+data/processed/
+models/trained/
+*.pkl
+*.joblib
+*.h5
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e resultados
+*.log
+results/
+experiments/
+
+# Testes
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações sensíveis
+.env
+config.json
+
+# Matplotlib cache
+.matplotlib/
