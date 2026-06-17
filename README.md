@@ -1,20 +1,14 @@
 # Recomendador de Filmes
 
-Projeto de machine learning que desenvolvi pra aprender como sistemas de recomendação funcionam na prática. Escolhi filmes porque é um tema que todo mundo entende.
+Projeto que fiz pra entender como sistemas de recomendação funcionam por dentro. Usei filtragem baseada em conteúdo: o sistema pega as características de um filme (gênero, diretor, elenco, sinopse) e encontra os mais parecidos usando TF-IDF e similaridade por cosseno.
 
-Usei filtragem baseada em conteúdo com TF-IDF e similaridade por cosseno. Não é o algoritmo mais avançado do mundo, mas me ajudou a entender os fundamentos de como o Netflix e outros serviços chegam nas sugestões.
+Não é o algoritmo do Netflix. Mas construir do zero me fez entender por que o algoritmo do Netflix é do jeito que é — e quais os limites de cada abordagem.
 
-## O que aprendi
-- Como representar texto numericamente com TF-IDF
-- Similaridade por cosseno para comparar itens
-- Diferença entre filtragem colaborativa e baseada em conteúdo
-- Como organizar um projeto de ML de forma limpa
+```python
+from main import recomendar
 
-## Como rodar
-
-```bash
-pip install -r requirements.txt
-python run.py
+filmes = recomendar("Interestelar", n=5)
+# ['Gravity', 'The Martian', 'Contact', ...]
 ```
 
 ## Stack
